@@ -1,0 +1,339 @@
+body{
+background-image: url(images/backgroundgreen.jpeg);
+background-size: cover;
+color: rgb(0, 0, 0);
+font-family: 'Lora', serif;
+font-size: 16px;
+}
+
+h1, h2, h3{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+	color: #539165;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 32px;
+}
+
+h2{
+	color: #1ABE54;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #6B72E1;
+	font-size: 16px;
+	font-weight: 600;
+	transition: color 0.3s ease;
+
+}
+
+a:hover{
+	color: black;
+	font-size: bold;
+}
+
+.list-vertical li{
+	padding: 15px 15px;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+
+
+/* Custom design with class */
+
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+
+@media (max-width: 500px) {
+	.container {
+	width: 400px;
+}
+}
+
+@media (max-width: 760px) {
+	.container {
+	width: 600px;
+	}
+}
+
+.card-white {
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.card-white:hover{
+	box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.4);
+	transition: box-shadow 0.5s ease;
+
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	margin-top: 20px;
+}
+
+#contact{
+justify-content: space-around;
+
+}
+.flexbox img{
+	border-radius: 6px;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.btn-blue {
+	background-color: #539165;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+}
+
+.btn-blue:hover {
+	background-color: white;
+	color: #539165;
+	transition: color 0.3s ease;
+}
+
+.list-inline{
+	list-style: none;`
+	padding-left: Opx;
+
+}
+
+.list-inline li {
+	display: inline;
+	padding: 10px;
+	margin:	0 auto;
+}
+
+.list-inline i{
+	font-size: 50px;
+	color: #539165;
+
+}
+
+.list-inline i:hover {
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+	transition: color 0.3s ease;
+}
+
+#introducion p {
+	
+}
+
+.link-other {
+	position:relative;
+	text-decoration: none;
+	color:black;
+}
+
+
+}
+
+}
+
+#text{
+	padding-bottom: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 150px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  font-size: 100px;
+  font-family: "Lora";
+  font-weight: 90px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sidebar ul li {
+  padding: auto auto;
+
+}
+
+.page-content {
+  margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.app {
+	display: flex;
+	min-height: 100vh;
+}
+
+.menu-toggle {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: white;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar {
+	flex: 1 1 0;
+	max-width: 300px;
+	padding: 2rem 1rem;
+	background-color: #285430;
+}
+
+.sidebar h3 {
+	color: white;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+.sidebar .menu {
+	margin: 0 -1rem;
+}
+
+.sidebar .menu .menu-item {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s linear;
+}
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.is-active {
+	color: #3bba9c;
+	border-right: 5px solid #3bba9c;
+}
+
+.sidebar .menu .menu-item:hover {
+	border-right: 5px solid #3bba9c;
+}
+
+.content {
+	flex: 1 1 0;
+	padding: 2rem;
+}
+
+.content h1 {
+	color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.content p {
+	color: #707793;
+}
+
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+	}
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -300px;
+		height: 100vh;
+		width: 100%;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+	}
+
+	

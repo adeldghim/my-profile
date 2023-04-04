@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adel Dghim's profile</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/07f1621c4b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body>
+	
+	<div class="app">
+
+
+		<div class="container">
+	<div class="card-white" id="introduction">
+		<h1>Hello, I'm Adel Dghim!</h1>
+		<ul class="list-vertical">
+	   	<li><img class=img-circle width="150px" alt="toi t'as pas la fibre"src="images/adel.jpeg"></li>
+	   	<li><p id=text>
+			Hi, welcome to my profile page! you will be able to learn more about me.</p></li>
+	   	<li><a href="https://adeldghim.github.io/landing/" target="_blank" class="btn-blue">website</a></li>
+	   	</ul>
+	</div>
+	
+	<div class="card-white" id="study">
+		<h2>My studies📚</h2>
+		<div class="flexbox">
+		<p>
+			I am currently in my first year of BBA at <strong> <a href="https://www.essec.edu/fr/" target="_blank" class="link-other">ESSEC Business School</a></strong>, in English track. 
+		</p>
+		<img src="images/essec.jpeg" width="150px">
+		</div>
+	</div>
+
+	<div class="card-white" id="asso">
+		<h2>My ESSEC association🎵</h2>
+		<div class="flexbox">
+		<p>
+			I am a member of the troupe of the <a href="https://www.musical-essec.com/" class="link-other" target="_blank">Musical ESSEC</a>  association, a semi-professional student musical comedy association. We have about 14 hours of rehearsals per week and will perform at the Casino de Paris on May 20th 2023.
+		</p>
+		<img src="images/musical.png" width="150px">
+	</div>
+	</div>
+
+	<div class="card-white" id="hobby">
+		<h2>My Hobbies🎹</h2>
+		<div class="flexbox">
+		<p>
+			Music is my greatest passion. I love to sing and play the piano. I can also play the ukulele, drums and guitar.
+		</p>
+		<img src="images/elton2.jpeg" width="150px">
+		</div>
+	</div>
+
+	<div class="card-white">
+		<h2>Follow me</h2>
+		<div class="flexbox" id="contact">
+		<ul class="list-inline">
+			<li>
+				<a href="https://www.linkedin.com/in/adel-dghim/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/adel.dghim/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/profile.php?id=100085369655633" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>Menu</h3>
+			
+			<nav class="menu">
+				<a href="#" class="menu-item">About me</a>
+				<a href="#study" class="menu-item">Studies</a>
+				<a href="#asso" class="menu-item">Association</a>
+				<a href="#hobby" class="menu-item">Hobbies</a>
+				<a href="#contact" class="menu-item">Contact</a>
+			</nav>
+
+		</aside>
+
+
+	</div>
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+
+</body>
+
